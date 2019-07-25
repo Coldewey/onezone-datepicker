@@ -137,6 +137,7 @@ angular.module('onezone-datepicker.service', ['ionic'])
                 disablePastDays = false,
                 disableWeekend = false,
                 showTodayButton = true,
+                todayButtonText = 'Today',
                 disableDates = [],
                 showDatepicker = false,
                 calendarMode = false,
@@ -211,6 +212,11 @@ angular.module('onezone-datepicker.service', ['ionic'])
                 showTodayButton = scope.datepickerObject.showTodayButton;
             }
 
+            /* GET TODAY BUTTON TEXT */
+            if (angular.isDefined(scope.datepickerObject) && angular.isDefined(scope.datepickerObject.todayButtonText)) {
+                todayButtonText = scope.datepickerObject.todayButtonText;
+            }
+
             /* GET CALLBACK FUNCTION */
             if (angular.isDefined(scope.datepickerObject) && angular.isDefined(scope.datepickerObject.callback) && angular.isFunction(scope.datepickerObject.callback)) {
                 callback = scope.datepickerObject.callback;
@@ -252,6 +258,7 @@ angular.module('onezone-datepicker.service', ['ionic'])
                 disableDates: disableDates,
                 showDatepicker: showDatepicker,
                 showTodayButton: showTodayButton,
+                todayButtonText: todayButtonText,
                 calendarMode: calendarMode,
                 hideCancelButton: hideCancelButton,
                 hideSetButton: hideSetButton,

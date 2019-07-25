@@ -10,7 +10,7 @@
 
 .onezone-datepicker.onezone-datepicker-show {
   max-height: 600px;
-  border-bottom: 2px solid #ECECEC; }
+  margin-top: 10px; }
 
 .onezone-datepicker-modal {
   position: absolute;
@@ -20,7 +20,7 @@
   left: 0;
   right: 0;
   text-align: center;
-  background: rgba(255, 255, 255, 0.9); }
+  background: #FBFAFA; }
 
 .onezone-datepicker-loader {
   position: absolute;
@@ -40,22 +40,11 @@
   display: inline-block;
   cursor: pointer;
   color: #3A4351;
+  border-radius: 4px;
   font-size: 15px;
   font-weight: bold;
-  margin-bottom: 5px;
-  padding: 8px 0;
-  border-bottom: 1px solid #F48685;
-  padding: 5px; }
-
-.onezone-datepicker-button:after {
-  position: absolute;
-  content: " ";
-  width: 0;
-  height: 0;
-  right: 0;
-  bottom: 0;
-  border-bottom: 6px solid #F48685;
-  border-left: 6px solid transparent; }
+  border: none;
+  margin: 10px 0 10px 0; }
 
 .onezone-datepicker-select-year {
   position: absolute;
@@ -70,8 +59,9 @@
   color: #F48685;
   text-align: center;
   width: 24px;
-  padding-top: 10px;
-  line-height: 24px; }
+  line-height: 24px;
+  padding: 0px;
+  margin: 10px 0 10px 0; }
 
 .onezone-datepicker-week {
   font-weight: 600;
@@ -82,10 +72,6 @@
   padding: px 0; }
 
 .onezone-datepicker-day {
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  border-radius: 100%;
   cursor: pointer;
   display: block;
   margin: 0 auto;
@@ -94,7 +80,8 @@
   width: 26px;
   height: 26px;
   line-height: 22px;
-  border: 2px solid #FBFAFA; }
+  border: 2px solid #FBFAFA;
+  border-radius: 4px; }
 
 .onezone-datepicker-current-day {
   border: 2px solid #dddddd; }
@@ -108,16 +95,9 @@
 
 .onezone-datepicker-active-day,
 .onezone-datepicker-active-day:hover {
+  font-weight: bold;
   border: 2px solid #F48685;
-  font-weight: bold; }
-
-.onezone-datepicker-selection-button {
-  color: #F48685;
-  font-size: 34px;
-  padding-top: 5px;
-  display: inline-block;
-  cursor: pointer;
-  width: 40px; }
+  border-radius: 4px; }
 
 .onezone-datepicker-close-button {
   position: absolute;
@@ -149,9 +129,33 @@
   line-height: 50px;
   font-size: 14px;
   text-transform: uppercase;
+  border-radius: 4px;
   cursor: pointer; }
 
 .onezone-datepicker-modal-item.onezone-datepicker-modal-item-active {
   background-color: #F48685;
   color: white;
   font-weight: bold; }
+
+.onezone-datepicker .button-left-container .onezone-datepicker-selection-button {
+  width: 100%;
+  text-align: center;
+  background: #F5F5F5;
+  font-family: unset;
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 16px;
+  display: inline-block;
+  cursor: pointer; }
+
+.onezone-datepicker .button-right-container.button-right-hidden {
+  display: none; }
+
+.onezone-datepicker .button-right-container .button-set, .onezone-datepicker .button-right-container .button-cancel {
+  font-size: 34px;
+  width: 40px;
+  display: inline-block;
+  color: #F48685;
+  margin-top: 16px;
+  cursor: pointer; }

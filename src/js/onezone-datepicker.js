@@ -73,6 +73,7 @@ angular.module('onezone-datepicker', ['ionic', 'onezone-datepicker.templates', '
                 showMonthModal: false,
                 showYearModal: false,
                 showTodayButton: false,
+                todayButtonText: 'Today',
                 calendarMode: false,
                 hideCancelButton: false,
                 hideSetButton: false
@@ -84,6 +85,7 @@ angular.module('onezone-datepicker', ['ionic', 'onezone-datepicker.templates', '
             scope.datepicker.hideCancelButton = parameters.hideCancelButton;
             scope.datepicker.hideSetButton = parameters.hideSetButton;
             scope.datepicker.showTodayButton = onezoneDatepickerService.showTodayButton(parameters);
+            scope.datepicker.todayButtonText = parameters.todayButtonText || 'Today';
 
             /* VERIFY IF TWO DATES ARE EQUAL */
             scope.sameDate = function (date, compare) {
