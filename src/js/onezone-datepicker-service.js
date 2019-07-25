@@ -372,7 +372,7 @@ angular.module('onezone-datepicker.service', ['ionic'])
                 return false;
             }
 
-            return !checkIfIsDisabled(date, parameters.disablePastDays, parameters.disableWeekend, parameters.disableDates, parameters.displayFrom, parameters.displayTo);
+            return !checkIfIsDisabled(date, parameters.disablePastDays, parameters.disableWeekend, parameters.disableDaysOfWeek, parameters.disableDates, parameters.displayFrom, parameters.displayTo);
         };
 
         serviceFactory.getParameters = _getParameters;
