@@ -35,6 +35,7 @@ Or download the file and copy it in your "lib" directory (lib/onezone-datepicker
         disableDaysOfWeek: disableDaysOfWeek,
         showDatepicker: false,
         showTodayButton: true,
+        todayButtonText: 'Today',
         calendarMode: false,
         hideCancelButton: false,
         hideSetButton: false,
@@ -111,21 +112,25 @@ Hide/Show today button.
 
 `NOTE: If the current date is disabled by disableWeekend or disableDates the button will automatically disappear`
 
-14) **calendarMode** (Optional)
+14) **todayButtonText** (Optional)
+
+The text displayed on the today button. Defaults to "Today". 
+
+15) **calendarMode** (Optional)
 
 If you set this flag, the datepicker will go in calendar mode. Set, cancel and today button will disappear and when a user is selecting a date the callback method will be triggered.
 
-15) **hideCancelButton** (Optional)
+16) **hideCancelButton** (Optional)
 
 Hide Cancel button
 
-16) **hideSetButton** (Optional)
+17) **hideSetButton** (Optional)
 
 Hide Set button.
 
 `NOTE: If you hide the set button, when the user selects the date, the datepicker will collapse and the date will be set`
 
-17) **highlights** (Optional)
+18) **highlights** (Optional)
 
 You can pass a list of objects to highlight dates. Example: 
 
@@ -146,7 +151,7 @@ You can pass a list of objects to highlight dates. Example:
         }
     ]
 
-18) **callback** (Optional)
+19) **callback** (Optional)
 
 Represent the callback function
 
